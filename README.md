@@ -21,7 +21,7 @@ All the methods in RestFixture can be used with RestFixtureScenario, see the exa
   | http.client.connection.timeout | 10000 |
 
   |script|com.qa.http.RestFixtureWrapper| http://127.0.0.1:8080 |
-  |---|---|
+  |---|---|---|
 
   * implement your scenario table in Fitnesse test project.
 
