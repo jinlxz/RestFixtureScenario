@@ -10,6 +10,7 @@ All the methods in RestFixture can be used with RestFixtureScenario, see the exa
   * include the Fixture in classpath, thus it can be found by Fitnesse test runner.
 
   |import|
+  |---|
   |com.qa.http|
 
   * configure the settings for RestFixture and initialize a RestFixtureWrapper instance.
