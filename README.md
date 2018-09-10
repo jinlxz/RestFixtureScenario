@@ -31,7 +31,7 @@ All the methods in RestFixture can be used with RestFixtureScenario, see the exa
   |scenario| query orders by userid | USER_ID | check rc | HTTP_CODE | check body | BODY |
   |---|---|---|---|---|---|---|
   |setHeader;|Content-Type: application/json|
-  |GET;| /some/uri/path?user_id=@USER_ID | | 200 | jsonbody.length==10 && jsonbody[0].order_name=='hello' | 
+  |GET;| /some/uri/path?user_id=@USER_ID | | @HTTP_CODE | @BODY | 
   
   A Post example.
 
@@ -39,7 +39,7 @@ All the methods in RestFixture can be used with RestFixtureScenario, see the exa
   |---|---|---|---|---|---|---|
   |setHeader;|Content-Type: application/json|
   |setBody;|{"order_name":"xxx","order_id":123}|
-  |POST;| /some/uri/path?user_id=@USER_ID | | 204 | no-body| 
+  |POST;| /some/uri/path?user_id=@USER_ID | | @HTTP_CODE | no-body| 
  
 ## License
 Apache License V2
